@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <body>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Portafolio-Johan</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    
+           <header class="header">
+           <div class="logo-container">
+           <img src="logo3d.png" alt="Logo JP" class="logo">
+           </div>
+               <nav class="nav">
+                <a href="En Proceso..." class="active">Inicio</a>
+                <a href="https://johanpresinal09.blogspot.com/">Habilidades</a>
+                <a href="En proceso..." >Educación</a>
+                <a href="Curriculum Vital.pdf">Curriculum</a>
+                <a href="https://johanmanuelpresina.wixsite.com/digesett-gob-do">Trabajo Wed</a>
+            </nav>
+
+            <div class="social-icons">
+        <a href="https://Linkedin.com/en/Johan-Presinal/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Johanpresinal08/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://steampowered.com/profiles/76561199780159189/edit/info" target="_blank"><i class="fab fa-steam"></i></a>
+        <a href="https://pinterest.com/Jpr3s1nal/" target="_blank"><i class="fab fa-pinterest"></i></a>
+        <a href="https://instagram.com/j0han25/" target="_blank"><i class="fab fa-instagram"></i></a>
+       </div>
+    </header>
+
+      <section class="Home">
+        <div class="home-container">
+         <div class="home-img"> 
+          <img src="Perfil Graduado.JPG" alt="Perfil Foto">
+        </div>
+        <div class="home-content">
+           <h1> Hola, Soy<span> Johan Presinal</span></h1>
+           <h3 class="typing-text"> Soy <span id="typed-text"></span></h3>
+           <p>Apasionado por crear experiencias web únicas y funcionales.
+            Siempre buscando aprender nuevas tecnologías y mejorar mis habilidades.</p>
+           <a href="Classifield Top Secret.JPG" class="sobre mi"> Sobre Mi </a>
+         </div>
+      </section>
+
+          <script>
+            const words = ["Diseñador Wed", "Pensador Creativo","Fotografo","Editor de Video"];
+            let i = 0;
+            let j = 0;
+            let currentWord = "!";
+            let isDeleting = false;
+            const typedText = document.getElementById("typed-text");
+
+            function type() {
+            currentWord = words[i];
+            if (isDeleting) {
+            typedText.textContent = currentWord.substring(0, j--);
+            } else {
+            typedText.textContent = currentWord.substring(0, j++);
+            }
+
+            if (!isDeleting && j === currentWord.length) {
+            isDeleting = true;
+            setTimeout(type, 1000); // Pausa antes de borrar
+            } else if (isDeleting && j === 0) {
+            isDeleting = false;
+            i = (i + 1) % words.length;
+            setTimeout(type, 500); // Pausa antes de escribir el siguiente
+          } else {
+            setTimeout(type, isDeleting ? 50 : 100); // Velocidad de escritura/borrado
+          }
+        }
+
+        document.addEventListener("DOMContentLoaded", type);
+        </script>
+        <footer>
+          <div class="footer-content">
+            <p>&copy; 2025 Johan Presinal - Todos los derechos reservados</p>
+        </footer>
+      </body>
+    </html>
+
+    
