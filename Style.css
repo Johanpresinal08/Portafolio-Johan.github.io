@@ -18,6 +18,14 @@
   z-index: 1100;
 }
 
+.nav {
+  display: none;
+}
+
+.nav.active {
+  display: block;
+}
+
 /* Menú oculto en móviles */
 @media (max-width: 768px) {
   .menu-toggle {
@@ -284,6 +292,7 @@ footer {
     border-top: 1px solid #b74b4b;
    
 }
+
 
 
 
