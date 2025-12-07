@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+    <body>
     <head>
-      <body>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Portafolio-Johan</title>
@@ -15,6 +15,10 @@
            <img src="logo3d.png" alt="Logo JP" class="logo">
            </div>
 
+           <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
                <nav class="nav">
                 <a href="En Proceso..." class="active">Inicio</a>
                 <a href="En Proceso...">Habilidades</a>
@@ -23,7 +27,6 @@
                 <a href="http://johanpresinal09.blogspot.com/">Blog</a>
             </nav>
                
-
             <div class="social-icons">
         <a href="https://Linkedin.com/in/Johan-Presinal-10419b386/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Johanpresinal08/" target="_blank"><i class="fab fa-github"></i></a>
@@ -31,7 +34,7 @@
         <a href="https://instagram.com/j0han25/" target="_blank"><i class="fab fa-instagram"></i></a>
        </div>
     </header>
-    
+
       <section class="Home">
         <div class="home-container">
          <div class="home-img"> 
@@ -45,16 +48,15 @@
            <a href="sobre-mi.jpg" class="Sobre mi"> Sobre Mi </a>
          </div>
       </section>
-    
-     <script>
-           const menuToggle = document.getElementById("menu-toggle");
-           const nav = document.getElementById("nav");
 
-           menuToggle.addEventListener("click", () => {
-           nav.classList.toggle("active");
-           });
-         </script>
-               
+      <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav");
+
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
 
           <script>
             const words = ["Diseñador Web", "Pensador Creativo","Fotografo","Editor de Video"];
@@ -92,11 +94,6 @@
         </footer>
       </body>
     </html>
-
-
-    
-
-
 
 
 
