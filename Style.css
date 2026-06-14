@@ -191,6 +191,21 @@ span {
     color: #ddd;
 }
 
+.sobre-mi-img {
+    width: 100%;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.sobre-mi-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 /* ===== HABILIDADES ===== */
 .skills-grid {
     display: grid;
