@@ -1,111 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
-    <body>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Portafolio-Johan</title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="Style.css">
-    </head>
-    
-           <header class="header">
-           <div class="logo-container">
-           <img src="Logo.png.PNG" alt="Logo JP" class="logo">
-           </div>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Portafolio - Johan Presinal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
 
-           <div class="menu-toggle" id="menu-toggle">
-           <i class="fas fa-bars"></i>
-           </div>
+    <header class="header">
+        <div class="logo-container">
+            <a href="#home"><img src="Logo.png.PNG" alt="Logo JP" class="logo"></a>
+        </div>
 
-               <nav class=".nav">
-                <a href="https://johanpresinal08.github.io/Proyectos-Flexbox/">Habilidades</a>
-                <a href="https://johanmanuelpresina.wixsite.com/digesett-gob-do" >Proyecto Web</a>
-                <a href="Curriculum Vital.pdf">Curriculum</a>
-                <a href="http://johanpresinal09.blogspot.com/">Blog</a>
-            </nav>
-               
-            <div class="social-icons">
-        <a href="https://Linkedin.com/in/Johan-Presinal-10419b386/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Johanpresinal08/" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://pinterest.com/Jpr3s1nal/" target="_blank"><i class="fab fa-pinterest"></i></a>
-        <a href="https://instagram.com/j0han25/" target="_blank"><i class="fab fa-instagram"></i></a>
-       </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="nav" id="nav">
+            <a href="#home">Inicio</a>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="https://johanmanuelpresina.wixsite.com/digesett-gob-do" target="_blank">Proyecto Web</a>
+            <a href="#fotografia">Fotografía</a>
+            <a href="#videos">Videos</a>
+            <a href="Curriculum-Vital.pdf" target="_blank">Currículum</a>
+            <a href="http://johanpresinal09.blogspot.com/" target="_blank">Blog</a>
+        </nav>
+
+        <div class="social-icons">
+            <a href="https://Linkedin.com/in/Johan-Presinal-10419b386/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Johanpresinal08/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://pinterest.com/Jpr3s1nal/" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://instagram.com/j0han25/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
     </header>
 
-      <section class="Home">
+    <!-- HOME -->
+    <section class="Home" id="home">
         <div class="home-container">
-         <div class="home-img"> 
-          <img src="Perfil Graduado.JPG" alt="Perfil Foto">
+            <div class="home-img">
+                <img src="Perfil-Graduado.JPG" alt="Foto de perfil de Johan Presinal">
+            </div>
+            <div class="home-content">
+                <h1>Hola, Soy <span>Johan Presinal</span></h1>
+                <h3 class="typing-text">Soy <span id="typed-text"></span></h3>
+                <p>Apasionado por crear experiencias web únicas y funcionales.
+                Siempre buscando aprender nuevas tecnologías y mejorar mis habilidades.</p>
+                <a href="#sobre-mi" class="btn-cta">Sobre Mí</a>
+            </div>
         </div>
-        <div class="home-content">
-           <h1> Hola, Soy<span> Johan Presinal</span></h1>
-           <h3 class="typing-text"> Soy <span id="typed-text"></span></h3>
-           <p>Apasionado por crear experiencias web únicas y funcionales.
-            Siempre buscando aprender nuevas tecnologías y mejorar mis habilidades.</p>
-           <a href="sobre-mi.jpg" class="Sobre mi"> Sobre Mi </a>
-         </div>
-      </section>
+    </section>
 
-      <script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const nav = document.getElementById(".nav");
+    <!-- SOBRE MI -->
+    <section class="sobre-mi" id="sobre-mi">
+        <h2 class="section-title">Sobre <span>Mí</span></h2>
+        <div class="sobre-mi-content">
+            <p>
+                Soy estudiante de Ingeniería en Sistemas y futuro líder de equipos tecnológicos.
+                Me apasiona el desarrollo web, la fotografía y la edición de video. Disfruto combinar
+                creatividad y tecnología para crear contenido y experiencias digitales atractivas.
+            </p>
+        </div>
+    </section>
 
-  menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-</script>
+    <!-- HABILIDADES -->
+    <section class="habilidades" id="habilidades">
+        <h2 class="section-title">Mis <span>Habilidades</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git / GitHub</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-film"></i>
+                <h3>Edición de Video</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-camera-retro"></i>
+                <h3>Fotografía</h3>
+            </div>
+        </div>
+    </section>
 
-          <script>
-            const words = ["Diseñador Web", "Pensador Creativo","Fotografo","Editor de Video"];
-            let i = 0;
-            let j = 0;
-            let currentWord = "!";
-            let isDeleting = false;
-            const typedText = document.getElementById("typed-text");
+    <!-- FOTOGRAFIA -->
+    <section class="fotografia" id="fotografia">
+        <h2 class="section-title">Mi <span>Fotografía</span></h2>
+        <p class="videos-intro">
+            Una selección de mis trabajos fotográficos, capturados y editados con atención al detalle, la luz y la composición.
+        </p>
 
-            function type() {
+        <div class="photo-masonry">
+            <div class="photo-item large">
+                <img src="foto1.jpg" alt="Fotografía 1">
+                <div class="photo-overlay">
+                    <h3>Retrato Urbano</h3>
+                    <p>Santo Domingo</p>
+                </div>
+            </div>
+            <div class="photo-item">
+                <img src="foto2.jpg" alt="Fotografía 2">
+                <div class="photo-overlay">
+                    <h3>Paisaje</h3>
+                    <p>Edición en Lightroom</p>
+                </div>
+            </div>
+            <div class="photo-item">
+                <img src="foto3.jpg" alt="Fotografía 3">
+                <div class="photo-overlay">
+                    <h3>Detalle</h3>
+                    <p>Fotografía macro</p>
+                </div>
+            </div>
+            <div class="photo-item">
+                <img src="foto4.jpg" alt="Fotografía 4">
+                <div class="photo-overlay">
+                    <h3>Arquitectura</h3>
+                    <p>Blanco y negro</p>
+                </div>
+            </div>
+            <div class="photo-item large">
+                <img src="foto5.jpg" alt="Fotografía 5">
+                <div class="photo-overlay">
+                    <h3>Atardecer</h3>
+                    <p>iPhone 14 Pro</p>
+                </div>
+            </div>
+            <div class="photo-item">
+                <img src="foto6.jpg" alt="Fotografía 6">
+                <div class="photo-overlay">
+                    <h3>Naturaleza</h3>
+                    <p>Composición</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEOS / EDICIÓN -->
+    <section class="videos" id="videos">
+        <h2 class="section-title">Videos & <span>Edición</span></h2>
+        <p class="videos-intro">
+            Contenido grabado en 4K con iPhone 14 Pro y estabilizado con DJI Osmo Mobile 7P,
+            editado en CapCut, DaVinci Resolve y Premiere Pro.
+        </p>
+
+        <div class="videos-grid">
+            <!-- Reemplaza el src por el enlace de embed de cada reel de Instagram -->
+            <div class="video-card">
+                <div class="video-embed">
+                    <iframe src="https://www.instagram.com/reel/REEL_ID_1/embed" 
+                            frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Edición 1</h3>
+                    <p>Editado en CapCut</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-embed">
+                    <iframe src="https://www.instagram.com/reel/REEL_ID_2/embed" 
+                            frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Edición 2</h3>
+                    <p>Editado en DaVinci Resolve</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-embed">
+                    <iframe src="https://www.instagram.com/reel/REEL_ID_3/embed" 
+                            frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Edición 3</h3>
+                    <p>Editado en Premiere Pro</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="videos-cta">
+            Más contenido en mi 
+            <a href="https://instagram.com/j0han25/" target="_blank">Instagram</a>
+        </p>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Johan Presinal - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const nav = document.getElementById("nav");
+
+        menuToggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    </script>
+
+    <script>
+        const words = ["Diseñador Web", "Pensador Creativo", "Fotógrafo", "Editor de Video"];
+        let i = 0;
+        let j = 0;
+        let currentWord = "";
+        let isDeleting = false;
+        const typedText = document.getElementById("typed-text");
+
+        function type() {
             currentWord = words[i];
             if (isDeleting) {
-            typedText.textContent = currentWord.substring(0, j--);
+                typedText.textContent = currentWord.substring(0, j--);
             } else {
-            typedText.textContent = currentWord.substring(0, j++);
+                typedText.textContent = currentWord.substring(0, j++);
             }
 
             if (!isDeleting && j === currentWord.length) {
-            isDeleting = true;
-            setTimeout(type, 1000); // Pausa antes de borrar
+                isDeleting = true;
+                setTimeout(type, 1000);
             } else if (isDeleting && j === 0) {
-            isDeleting = false;
-            i = (i + 1) % words.length;
-            setTimeout(type, 500); // Pausa antes de escribir el siguiente
-          } else {
-            setTimeout(type, isDeleting ? 50 : 50); // Velocidad de escritura/borrado
-          }
+                isDeleting = false;
+                i = (i + 1) % words.length;
+                setTimeout(type, 500);
+            } else {
+                setTimeout(type, isDeleting ? 50 : 80);
+            }
         }
 
         document.addEventListener("DOMContentLoaded", type);
-        </script>
-        <footer>
-          <div class="footer-content">
-            <p>&copy; 2025 Johan Presinal - Todos los derechos reservados</p>
-        </footer>
-      </body>
-    </html>
+    </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
+</html>
 
 
 
