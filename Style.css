@@ -15,7 +15,7 @@ html {
 /* ===== BODY ===== */
 body {
     background-color: #0d0d0d;
-    background-image: url(images/Escritorio.jpg);
+    background-image: url(Escritorio.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
